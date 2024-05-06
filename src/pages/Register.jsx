@@ -84,15 +84,11 @@ const Register = () => {
             }}
             validationSchema={registerSchema}
             onSubmit={(values, actions) => {
-              //TODO
-              //? POST (Login)
-              //? Toastify
-              //? Global state güncellenmesi
-              //? form resetleme
-              //? navigate
+        
+         
               register(values);
               actions.resetForm();
-              actions.setSubmitting(false); //? isSubmitting
+              actions.setSubmitting(false); 
             }}
           >
             {({
