@@ -5,8 +5,9 @@ import firmReducer from "../features/firmSlice";
 const store = configureStore({
   reducer: {
     auth: authReducer,
-    firm: firmReducer,
+    firms: firmReducer
   },
-  devTools: process.env.NODE_ENV !== "production",
+  devTools: process.env.NODE_ENV !== "production", 
 });
 export default store;
+
